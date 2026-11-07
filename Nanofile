@@ -1,0 +1,22 @@
+moved {
+  from = module.storage.azapi_resource.containers["logs"]
+  to   = module.storage.module.containers["logs"].azapi_resource.this
+}
+
+moved {
+  from = module.storage.azapi_resource.queue["jobs"]
+  to   = module.storage.module.queues["jobs"].azapi_resource.this
+}
+
+moved {
+  from = module.storage.azapi_resource.share["content"]
+  to   = module.storage.module.shares["content"].azapi_resource.this
+}
+
+moved {
+  from = module.storage.azapi_resource.table["metadata"]
+  to   = module.storage.module.tables["metadata"].azapi_resource.this
+}
+
+
+
